@@ -15,7 +15,7 @@ jobs:
         python3-version: [3.8, 3.9, 3.10]
     steps:
       
-      - name: Set up Python ${{python3-version}} }}
+      - name: Set up Python ${{ matrix.python3-version}}
         uses: actions/setup-python@v2
         with:
           python-version: '${{ matrix.python3-version }}'
